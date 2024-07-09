@@ -1,33 +1,11 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .app {
   display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 1) 0%, transparent 100%), url('../assets/menu_background.png');
-  background-size: cover; /* Ensure the background covers the entire container */
+  background-image: linear-gradient(rgba(0, 0, 0, 1) 0%, transparent 100%), url('../assets/menu_background.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; /* Center the background image */
+  background-attachment: fixed;
+  background-position: left;
   font-family: "Rajdhani"; 
   color: white;
-  min-height: 100vh; /* Ensure it covers at least the full viewport height */
-  width: 100%; /* Ensure it covers the full viewport width */
-}
-
-/* Adding a wrapper div for better control */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-}
-
-@media (max-width: 768px) {
-  .app {
-    background-size: auto 100%; /* Adjusts image height to fill container */
-  }
+  width:100%;
 }
